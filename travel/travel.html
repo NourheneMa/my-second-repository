@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="bourse.css">
+        <title>Travel the world</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>   
+        <header>
+            <nav id="nav-bar">
+                <ul id="nav-list">
+                    <img class="logo" src="images/logo.png">
+                    <li><a id="nav-link" href="#home" alt="home">Home</a></li>
+                    <li><a id="nav-link" href="#aboutus" alt="aboutus">About Us</a></li>
+                    <li><a id="nav-link" href="#destination" alt="destination">Destination</a></li>
+                    <li><a id="nav-link" href="#packages" alt="packages">Packages</a></li>
+                    <li><a id="nav-link" href="#subscribe" alt="contacts">Contacts</a></li>
+                    <button type="submit" ><a href="#book">Book  ticket</a></button>
+                </ul>
+            </nav>
+        </header>
+
+        
+        <div class="container">
+        
+            <section id="home-section"  class="grid">
+                <div class="home"> 
+                    <p id="orange-p" ><b>best destinations around the world</b></p>
+                    <h1 >Travel to the any corner  of the <span>world</span></h1>
+                    <p id="gray-p"><b>WE CAN BUILD THE HOLIDAYS OF YOUR DREAMS AND MAKE THEM UNFORGETTABLE</b></p>
+                </div>
+                    <div class="images">
+                        <img class="airplane" src="/images/airplane.png">
+                        <img class="rectangle" src="images/Rectangle.png">
+                    </div>
+                  
+                <div id="book">
+                    <form>
+                        <ul id="form-list">
+                            <li><label>Destination<br><input type="text" placeholder="destination"></label></li>
+                            <li><label>Date<br><input type="date" placeholder="select a date"></label></li>
+                            <li><label>People<br><input type="text" placeholder="how many?"></label></li>
+                            <li><button type="select"><img src="images/search.png" class="btn"></button></li>
+                        </ul>
+                    </form>
+                </div>
+            </section>
+
+            <section id="destination">
+                <p id="orange-p"><b>Top destinations</b></p>
+                <h1>Explore top destinations</h1>
+
+                <div class="content">
+                    <div class="box">
+                        <figure>
+                            <img src="images/paris.jpg">
+                        </figure>
+                        <figcaption>france, paris <p>$480</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span><br>
+                            <a href="#">En savoir plus</a>
+                        </figcaption>
+                        
+                    </div>
+
+                    <div class="box">
+                        <figure>
+                            <img src="images/rome.jpg">
+                        </figure>
+                        <figcaption>Italy, Rome <p>$640</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span><br>
+                            <a href="#">En savoir plus</a>
+                        </figcaption>
+                        
+                    </div>
+
+                    <div class="box">
+                        <figure>
+                            <img src="images/tokio.jpg">
+                        </figure>
+                        <figcaption>Tokio <p>$1840</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span><br>
+                            <a href="#">En savoir plus</a>
+                        </figcaption>
+                        
+                    </div>
+
+
+                    <div class="box">
+                        <figure>
+                            <img src="images/Miami.jpg">
+                        </figure>
+                        <figcaption>Miami <p>$1220</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span><br>
+                            <a href="#">En savoir plus</a>
+                        </figcaption>
+                        
+                    </div>
+
+                    <div class="box">
+                        <figure>
+                            <img src="images/los-angeles.jpg">
+                        </figure>
+                        <figcaption>Los Angeles <p>$1640</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span><br>
+                            <a href="#">En savoir plus</a>
+                        </figcaption>
+                        
+                    </div>
+
+
+                    <div class="box">
+                        <figure>
+                            <img src="images/moscou.jpg">
+                        </figure>
+                        <figcaption>Russia, Moscow <p>$1270</p>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span><br>
+                            <a href="#">En savoir plus</a>
+                            
+                        </figcaption> 
+                    </div>
+                </div>  
+
+            </section >
+
+            <section id="aboutus">
+                <p id="orange-p"><b>How we work</b></p>
+                <h1>We offer best services</h1>
+                <div id="features">
+
+                    <img src="images/travel.png" class="travel">
+                    <div class="grid-f">
+                        <div class="icon">
+                            <i class="fa fa-map-marker" style="font-size:36px"></i>
+                        </div>
+                        <div class="desc">
+                            <h2>Choose distination</h2>
+                            <p>
+                                lorem ipsum dolor sit Amet, Consecteur adipicing Elit. Urna, TOrTor Tempus.
+                            </p>
+                        </div>
+                      
+                    </div>
+
+                    <div class="grid-f">
+                      <div class="icon"><i class="fa fa-star-o" style="font-size:36px"></i></div>
+                      <div class="desc">
+                        <h2>Five Star Hotel</h2>
+                        <p>
+                            lorem ipsum dolor sit Amet, Consecteur adipicing Elit. Urna, TOrTor Tempus.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="grid-f">
+                      <div class="icon">
+                        <i class="fa fa-plane" style="font-size:36px;"></i>
+                      </div>
+                      <div class="desc">
+                        <h2>Air Ticketing</h2>
+                        <p>
+                            lorem ipsum dolor sit Amet, Consecteur adipicing Elit. Urna, TOrTor Tempus.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="grid-f"> 
+                        
+                </div>
+            </section>
+
+                <section id="packages">
+                    <p id="orange-p" ><b>Travel type</b></p>
+                    <h1 >What Types Of travel Do We Specialeze In?</h1>
+                    <a href="#previous" class="previous round">&#8249;</a>
+                    <a href="#next" class="next round">&#8250;</a>
+                    <div class="pack-boxes">
+                    
+
+                        <div class="pack-box">
+                            <figure>
+                                <img id="previous"src="images/Family-Friendly_F.jpg">
+                            </figure>
+                            <figcaption>
+                                <h4>Family-Friendly Fun</h4>
+                                Vacations for All Ages
+                            </figcaption>
+                            <button type="submit" id="Explore">Explore</button>
+                        
+                        </div>
+
+                        <div class="pack-box">
+                            <figure>
+                                <img src="images/Adults-Only_F.jpg">
+                            </figure>
+                            <figcaption>
+                                <h4>Adult Escapes </h4>
+                                    Adult-Only Getaways
+                            </figcaption>
+                            <button type="submit" id="Explore">Explore</button>
+                        
+                        </div>
+
+                        <div class="pack-box">
+                            <figure>
+                                <img src="images/All-Inclusive_F.jpg">
+                            </figure>
+                            <figcaption>
+                                <h4>All-Inclusive Resorts & Cruises </h4>
+                                    Meals, Beverages and More Included
+                            </figcaption>
+                            <button type="submit" id="Explore">Explore</button>
+                        
+                        </div>
+
+                        <div class="pack-box">
+                            <figure>
+                                <img src="images/Romance-Honeymoon_F.jpg">
+                            </figure>
+                            <figcaption>
+                                <h4>Romance & Honeymoon </h4>
+                                    Getaways for Two
+                            </figcaption>
+                            <button type="submit" id="Explore">Explore</button>
+                        
+                        </div>
+
+                        <div class="pack-box">
+                            <figure>
+                                <img src="images/Local-Travel_F.jpg">
+                            </figure>
+                            <figcaption>
+                                <h4>Local vacations </h4>
+                                    Stay Close to Home or Get Out and Explore
+                            </figcaption>
+                            <button type="submit" id="Explore">Explore</button>
+                        
+                        </div>
+
+                        <div class="pack-box">
+                            <figure>
+                                <img src="images/Condos_F.jpg">
+                            </figure>
+                            <figcaption>
+                                <h4>Condo Resorts </h4>
+                                Spacious Accommodations
+                            </figcaption>
+                            <button type="submit" id="Explore">Explore</button>
+                        
+                        </div>     
+
+                        <div class="pack-box">
+                            <figure>
+                                <img id="next" src="images/relax.jpg">
+                            </figure>
+                            <figcaption>
+                                <h4>Relaxation Resorts  </h4>
+                                Meditation and Relaxation
+                            </figcaption>
+                            <button type="submit" id="Explore">Explore</button>
+                        
+                        </div>     
+                    </section>   
+                
+            </div>
+                </section>
+
+
+
+
+                <section id="testimonials">
+                    <!--heading--->
+                    <div class="testimonial-heading">
+                        <span id="orange-p"><b>Testimonial</b></span>
+                        <h1><b>What Our Clients Says About Us</b></h1>
+                    </div>
+                    <!--testimonials-box-container------>
+                    <div class="testimonial-box-container">
+                        <!--BOX-1-------------->
+                        <div class="testimonial-box">
+                            <!--top------------------------->
+                            <div class="box-top">
+                                <!--profile----->
+                                <div class="profile">
+                                    <!--img---->
+                                        <div class="profile-img">
+                                            <img src="images/nourhene.jpg" />
+                                        </div>
+                                    <!--name-and-username-->
+                                    <div class="name-user">
+                                        <strong>Touseeq Ijaz</strong>
+                                        <span>@touseeqijazweb</span>
+                                    </div>
+                                </div>
+                                <!--reviews------>
+                                <div class="reviews">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span><!--Empty star-->
+                                </div>
+                            </div>
+                            <!--Comments---------------------------------------->
+                            <div class="client-comment">
+                                <p>J'ai été très impressionnée par la plateforme de ce site. Elle est conviviale et facile à utiliser. De plus, leur service clientèle est exceptionnellement réactif et compétent. Je recommande vivement ce site .</p>
+                            </div>
+                        </div>      
+                        <div class="testimonial-box">
+                            <!--top------------------------->
+                            <div class="box-top">
+                                <!--profile----->
+                                <div class="profile">
+                                    <!--img---->
+                                        <div class="profile-img">
+                                            <img src="images/nourhene.jpg" />
+                                        </div>
+                                    <!--name-and-username-->
+                                    <div class="name-user">
+                                        <strong>Touseeq Ijaz</strong>
+                                        <span>@touseeqijazweb</span>
+                                    </div>
+                                </div>
+                                <!--reviews------>
+                                <div class="reviews">
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span><!--Empty star-->
+                                </div>
+                            </div>
+                            <!--Comments---------------------------------------->
+                            <div class="client-comment">
+                                <p>J'ai été très impressionnée par la plateforme de ce site. Elle est conviviale et facile à utiliser. De plus, leur service clientèle est exceptionnellement réactif et compétent. Je recommande vivement ce site .</p>
+                            </div>
+                </div>
+                <div class="testimonial-box">
+                    <!--top------------------------->
+                    <div class="box-top">
+                        <!--profile----->
+                        <div class="profile">
+                            <!--img---->
+                                <div class="profile-img">
+                                    <img src="images/nourhene.jpg" />
+                                </div>
+                            <!--name-and-username-->
+                            <div class="name-user">
+                                <strong>Touseeq Ijaz</strong>
+                                <span>@touseeqijazweb</span>
+                            </div>
+                        </div>
+                        <!--reviews------>
+                        <div class="reviews">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span><!--Empty star-->
+                        </div>
+                    </div>
+                    <!--Comments---------------------------------------->
+                    <div class="client-comment">
+                        <p>J'ai été très impressionnée par la plateforme de ce site. Elle est conviviale et facile à utiliser. De plus, leur service clientèle est exceptionnellement réactif et compétent. Je recommande vivement ce site .</p>
+                    </div>
+        </div>
+        <div class="testimonial-box">
+            <!--top------------------------->
+            <div class="box-top">
+                <!--profile----->
+                <div class="profile">
+                    <!--img---->
+                        <div class="profile-img">
+                            <img src="images/nourhene.jpg" />
+                        </div>
+                    <!--name-and-username-->
+                    <div class="name-user">
+                        <strong>Touseeq Ijaz</strong>
+                        <span>@touseeqijazweb</span>
+                    </div>
+                </div>
+                <!--reviews------>
+                <div class="reviews">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span><!--Empty star-->
+                </div>
+            </div>
+            <!--Comments---------------------------------------->
+            <div class="client-comment">
+                <p>J'ai été très impressionnée par la plateforme de ce site. Elle est conviviale et facile à utiliser. De plus, leur service clientèle est exceptionnellement réactif et compétent. Je recommande vivement ce site .</p>
+            </div>
+        </div>
+        
+        <section class="subscribe">
+            <h1>Subscribe Newsletter & Get Company News</h1>
+             <input id="subscribe" type="email" placeholder="enter your email">
+            <button type="submit">subscribe</button>
+            <div>
+            <img src="images/ABSTRACT.png" class="abstract" >
+            </div>
+        </section>
+        
+        <footer id="footer-nav">
+            <div id="footer">
+                <ul id="footer-list">
+                    <div class="logo">
+                        <img id="footer-logo" src="/images/logo.png">
+                    </div>
+                    <div class="img-footer">
+                        <img src="images/social media.png">
+                    </div>
+                    <li id="footer-li" ><b>Company</b>
+                        <ul>
+                            <li>About Us</li>
+                            <li>Destinations</li>
+                            <li>Packages</li>
+                            <li>Contacts</li>
+                        </ul>
+                    </li>
+                    <li id="footer-li"><b>Help</b>
+                        <ul>
+                            <li>Help/FAQ</li>
+                            <li>Cancel your flight</li>
+                            <li>Presss</li>
+                        </ul>
+                    </li>
+                    <li id="footer-li"><b>More</b>
+                        <ul>
+                            <li>Domestic Flights</li>
+                            <li>Investor Relations</li>
+                            <li>Partnerships</li>
+                            <li>Jobs</li>
+                        </ul>
+                        <li id="footer-li"><b>Terms</b>
+                            <ul>
+                                <li>Privacy Policy</li>
+                                <li>Terms of use</li>
+                                <li>Accessibily</li>
+                                
+                            </ul>
+                        </li>
+                    </li>
+                    
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
